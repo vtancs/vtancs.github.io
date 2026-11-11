@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Victor Tan — ML Researcher</title>
+<meta name="description" content="Victor Tan, ML Researcher. Geek in Sunny Singapore." />
+<link rel="icon" href="me.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="nav__brand">VT<span>.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="cv.pdf" class="nav__resume" target="_blank" rel="noopener">Resume</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="top" class="hero">
+    <div class="hero__content">
+      <p class="hero__greeting">Hi, I'm</p>
+      <h1 class="hero__name">Victor Tan</h1>
+      <h2 class="hero__title">ML Researcher</h2>
+      <p class="hero__tagline">Geek in Sunny Singapore 🇸🇬</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">See my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__photo">
+      <div class="hero__photo-ring">
+        <img src="me.png" alt="Victor Tan" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h3 class="section__label">01 / About</h3>
+    <div class="about__grid">
+      <p class="about__text">
+        I'm Victor Tan, an <strong>ML Researcher</strong> based in sunny Singapore.
+        I spend my time digging into machine learning problems, writing code across
+        a handful of languages, and generally being a geek about it.
+        <!-- TODO: expand this bio with your research focus, background, or interests -->
+      </p>
+      <ul class="about__facts">
+        <li><span>📍</span> Singapore</li>
+        <li><span>🎓</span> ML Research <!-- TODO: add field / institution --></li>
+        <li><span>💻</span> Python · C++ · C</li>
+        <li><span>✉️</span> vtancs@gmail.com</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h3 class="section__label">02 / Skills</h3>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <h4>Languages</h4>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">C</span>
+        </div>
+      </div>
+      <div class="skill-card skill-card--todo">
+        <h4>Tools &amp; Frameworks</h4>
+        <div class="tags">
+          <span class="tag tag--todo">+ Add yours</span>
+        </div>
+        <!-- TODO: add ML frameworks, libraries, tools you use (e.g. PyTorch, NumPy, Git, Docker) -->
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h3 class="section__label">03 / Projects</h3>
+    <p class="section__hint">Pulled from <a href="https://github.com/vtancs" target="_blank" rel="noopener">github.com/vtancs</a> — edit descriptions below.</p>
+    <div class="projects__grid">
+
+      <article class="project-card">
+        <h4>pycode</h4>
+        <p class="project-card__desc">Python playground / code collection. <!-- TODO: real description --></p>
+        <div class="tags"><span class="tag">Python</span></div>
+        <a class="project-card__link" href="https://github.com/vtancs/pycode" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h4>zig</h4>
+        <p class="project-card__desc">Experiments in Zig. <!-- TODO: real description --></p>
+        <div class="tags"><span class="tag">Zig</span></div>
+        <a class="project-card__link" href="https://github.com/vtancs/zig" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h4>sysadmin</h4>
+        <p class="project-card__desc">Sysadmin scripts and utilities. <!-- TODO: real description --></p>
+        <div class="tags"><span class="tag">PowerShell</span></div>
+        <a class="project-card__link" href="https://github.com/vtancs/sysadmin" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h4>python101</h4>
+        <p class="project-card__desc">Python fundamentals and learning notes. <!-- TODO: real description --></p>
+        <div class="tags"><span class="tag">Python</span></div>
+        <a class="project-card__link" href="https://github.com/vtancs/python101" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card project-card--add">
+        <h4>+ More</h4>
+        <p class="project-card__desc">Add your own project cards here — copy the structure above.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section section--contact">
+    <h3 class="section__label">04 / Contact</h3>
+    <p class="contact__text">Feel free to reach out.</p>
+    <div class="contact__links">
+      <a href="mailto:vtancs@gmail.com" class="contact__link">
+        <span class="contact__icon">✉️</span> vtancs@gmail.com
+      </a>
+      <a href="https://github.com/vtancs" target="_blank" rel="noopener" class="contact__link">
+        <span class="contact__icon">🐙</span> github.com/vtancs
+      </a>
+      <a href="#" class="contact__link contact__link--todo" title="TODO: add your LinkedIn URL">
+        <span class="contact__icon">💼</span> LinkedIn (TODO)
+      </a>
+      <a href="#" class="contact__link contact__link--todo" title="TODO: add your X/Twitter URL">
+        <span class="contact__icon">🐦</span> X / Twitter (TODO)
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Victor Tan. Built with plain HTML/CSS.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
