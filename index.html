@@ -8,18 +8,25 @@
 <link rel="icon" href="me.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<div class="dock">
+  <span class="dock__line"></span>
+  <a class="dock__icon" href="https://github.com/vtancs" target="_blank" rel="noopener" title="GitHub">🐙</a>
+  <a class="dock__icon" href="mailto:vtancs@gmail.com" title="Email">✉️</a>
+  <span class="dock__line"></span>
+</div>
+
 <header class="nav">
-  <a href="#top" class="nav__brand">VT<span>.</span></a>
+  <a href="#top" class="nav__brand"><span class="nav__brand-icon">▸</span> Victor Tan</a>
   <nav class="nav__links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
     <a href="cv.pdf" class="nav__resume" target="_blank" rel="noopener">Resume</a>
   </nav>
 </header>
@@ -28,24 +35,26 @@
 
   <section id="top" class="hero">
     <div class="hero__content">
-      <p class="hero__greeting">Hi, I'm</p>
-      <h1 class="hero__name">Victor Tan</h1>
-      <h2 class="hero__title">ML Researcher</h2>
-      <p class="hero__tagline">Geek in Sunny Singapore 🇸🇬</p>
+      <h1 class="hero__heading">
+        Victor is an <span class="accent">ML Researcher.</span><br>
+        he builds things, <span class="accent">tests them,</span> moves on.
+      </h1>
+      <p class="hero__tagline">python · c++ · c — geek in sunny Singapore 🇸🇬</p>
       <div class="hero__cta">
-        <a href="#projects" class="btn btn--primary">See my work</a>
-        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        <a href="#projects" class="btn btn--primary">projects =&gt;</a>
+        <a href="#contact" class="btn btn--ghost">contact =&gt;</a>
+      </div>
+      <div class="hero__badge">
+        <span class="accent">[ ]</span> open to ML research collaborations and roles. remote or Singapore-based.
       </div>
     </div>
     <div class="hero__photo">
-      <div class="hero__photo-ring">
-        <img src="me.png" alt="Victor Tan" />
-      </div>
+      <img src="me.png" alt="Victor Tan" />
     </div>
   </section>
 
   <section id="about" class="section">
-    <h3 class="section__label">01 / About</h3>
+    <div class="section__heading"><h3>about</h3><span class="section__rule"></span></div>
     <div class="about__grid">
       <p class="about__text">
         I'm Victor Tan, an <strong>ML Researcher</strong> based in sunny Singapore.
@@ -54,29 +63,29 @@
         <!-- TODO: expand this bio with your research focus, background, or interests -->
       </p>
       <ul class="about__facts">
-        <li><span>📍</span> Singapore</li>
-        <li><span>🎓</span> ML Research <!-- TODO: add field / institution --></li>
-        <li><span>💻</span> Python · C++ · C</li>
-        <li><span>✉️</span> vtancs@gmail.com</li>
+        <li>📍 Singapore</li>
+        <li>🎓 ML Research <!-- TODO: add field / institution --></li>
+        <li>💻 Python · C++ · C</li>
+        <li>✉️ vtancs@gmail.com</li>
       </ul>
     </div>
   </section>
 
   <section id="skills" class="section">
-    <h3 class="section__label">02 / Skills</h3>
+    <div class="section__heading"><h3>skills</h3><span class="section__rule"></span></div>
     <div class="skills__grid">
-      <div class="skill-card">
+      <div class="panel skill-card">
         <h4>Languages</h4>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">C++</span>
-          <span class="tag">C</span>
+        <div class="skill-card__list">
+          <span>Python</span>
+          <span>C++</span>
+          <span>C</span>
         </div>
       </div>
-      <div class="skill-card skill-card--todo">
+      <div class="panel skill-card skill-card--todo">
         <h4>Tools &amp; Frameworks</h4>
-        <div class="tags">
-          <span class="tag tag--todo">+ Add yours</span>
+        <div class="skill-card__list">
+          <span>+ add yours</span>
         </div>
         <!-- TODO: add ML frameworks, libraries, tools you use (e.g. PyTorch, NumPy, Git, Docker) -->
       </div>
@@ -84,62 +93,61 @@
   </section>
 
   <section id="projects" class="section">
-    <h3 class="section__label">03 / Projects</h3>
-    <p class="section__hint">Pulled from <a href="https://github.com/vtancs" target="_blank" rel="noopener">github.com/vtancs</a> — edit descriptions below.</p>
+    <div class="section__heading"><h3>projects</h3><span class="section__rule"></span></div>
+    <p class="section__hint">pulled from <a href="https://github.com/vtancs" target="_blank" rel="noopener">github.com/vtancs</a> — edit descriptions below.</p>
     <div class="projects__grid">
 
-      <article class="project-card">
+      <article class="panel project-card">
+        <div class="project-card__meta">Python</div>
         <h4>pycode</h4>
         <p class="project-card__desc">Python playground / code collection. <!-- TODO: real description --></p>
-        <div class="tags"><span class="tag">Python</span></div>
-        <a class="project-card__link" href="https://github.com/vtancs/pycode" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="project-card__links">
+          <a class="project-card__link" href="https://github.com/vtancs/pycode" target="_blank" rel="noopener">github =&gt;</a>
+        </div>
       </article>
 
-      <article class="project-card">
+      <article class="panel project-card">
+        <div class="project-card__meta">Zig</div>
         <h4>zig</h4>
         <p class="project-card__desc">Experiments in Zig. <!-- TODO: real description --></p>
-        <div class="tags"><span class="tag">Zig</span></div>
-        <a class="project-card__link" href="https://github.com/vtancs/zig" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="project-card__links">
+          <a class="project-card__link" href="https://github.com/vtancs/zig" target="_blank" rel="noopener">github =&gt;</a>
+        </div>
       </article>
 
-      <article class="project-card">
+      <article class="panel project-card">
+        <div class="project-card__meta">PowerShell</div>
         <h4>sysadmin</h4>
         <p class="project-card__desc">Sysadmin scripts and utilities. <!-- TODO: real description --></p>
-        <div class="tags"><span class="tag">PowerShell</span></div>
-        <a class="project-card__link" href="https://github.com/vtancs/sysadmin" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="project-card__links">
+          <a class="project-card__link" href="https://github.com/vtancs/sysadmin" target="_blank" rel="noopener">github =&gt;</a>
+        </div>
       </article>
 
-      <article class="project-card">
+      <article class="panel project-card">
+        <div class="project-card__meta">Python</div>
         <h4>python101</h4>
         <p class="project-card__desc">Python fundamentals and learning notes. <!-- TODO: real description --></p>
-        <div class="tags"><span class="tag">Python</span></div>
-        <a class="project-card__link" href="https://github.com/vtancs/python101" target="_blank" rel="noopener">View on GitHub →</a>
+        <div class="project-card__links">
+          <a class="project-card__link" href="https://github.com/vtancs/python101" target="_blank" rel="noopener">github =&gt;</a>
+        </div>
       </article>
 
-      <article class="project-card project-card--add">
-        <h4>+ More</h4>
-        <p class="project-card__desc">Add your own project cards here — copy the structure above.</p>
+      <article class="panel project-card project-card--add">
+        + more — add your own project cards here
       </article>
 
     </div>
   </section>
 
   <section id="contact" class="section section--contact">
-    <h3 class="section__label">04 / Contact</h3>
-    <p class="contact__text">Feel free to reach out.</p>
+    <div class="section__heading"><h3>contact</h3><span class="section__rule"></span></div>
+    <p class="contact__text">feel free to reach out.</p>
     <div class="contact__links">
-      <a href="mailto:vtancs@gmail.com" class="contact__link">
-        <span class="contact__icon">✉️</span> vtancs@gmail.com
-      </a>
-      <a href="https://github.com/vtancs" target="_blank" rel="noopener" class="contact__link">
-        <span class="contact__icon">🐙</span> github.com/vtancs
-      </a>
-      <a href="#" class="contact__link contact__link--todo" title="TODO: add your LinkedIn URL">
-        <span class="contact__icon">💼</span> LinkedIn (TODO)
-      </a>
-      <a href="#" class="contact__link contact__link--todo" title="TODO: add your X/Twitter URL">
-        <span class="contact__icon">🐦</span> X / Twitter (TODO)
-      </a>
+      <a href="mailto:vtancs@gmail.com" class="contact__link">✉️ vtancs@gmail.com</a>
+      <a href="https://github.com/vtancs" target="_blank" rel="noopener" class="contact__link">🐙 github.com/vtancs</a>
+      <a href="#" class="contact__link contact__link--todo" title="TODO: add your LinkedIn URL">💼 linkedin (TODO)</a>
+      <a href="#" class="contact__link contact__link--todo" title="TODO: add your X/Twitter URL">🐦 x / twitter (TODO)</a>
     </div>
   </section>
 
